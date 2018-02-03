@@ -1,0 +1,15 @@
+Enter the radius of the circle. I will give you the area of the circle.
+
+Your input of 1 has an area of 3.141592653589793
+
+Enter the radius of the circle. I will give you the area of the circle.
+
+Your input of 5 has an area of 78.53981633974483
+
+Enter the radius of the circle. I will give you the area of the circle.
+
+Your input of 25 has an area of 1963.4954084936207
+
+Enter the radius of the circle. I will give you the area of the circle.
+
+Please give a proper number or press CTRL+Z to exit

@@ -1,0 +1,43 @@
+Given Three Points, do they make a triangle? 
+ Enter Coordinates for point 1
+
+Enter Coordinates for point 2
+
+Enter Coordinates for point 3
+
+Your points are (0,0), (4,0), (4,3)
+
+This is a valid triangle
+Given Three Points, do they make a triangle? 
+ Enter Coordinates for point 1
+
+Enter Coordinates for point 2
+
+Enter Coordinates for point 3
+
+Your points are (4,5), (2,3), (-2,-7)
+
+This is a valid triangle
+Given Three Points, do they make a triangle? 
+ Enter Coordinates for point 1
+
+Enter Coordinates for point 2
+
+Enter Coordinates for point 3
+
+Your points are (0,0), (1,1), (-1,-1)
+
+Invalid Triangle
+Given Three Points, do they make a triangle? 
+ Enter Coordinates for point 1
+
+Enter Coordinates for point 2
+
+Enter Coordinates for point 3
+
+Your points are (-6,-9), (2,3), (100,120)
+
+This is a valid triangle
+Given Three Points, do they make a triangle? 
+ Enter Coordinates for point 1
+

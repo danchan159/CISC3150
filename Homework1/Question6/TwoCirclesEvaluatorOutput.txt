@@ -1,0 +1,77 @@
+Enter the coordinates of the center of the first circle
+
+Your coordinates for circle 1 are (0, 0)
+
+Enter the radius for circle 1
+
+Your radius for circle 1 is 5
+
+Enter the coordinates of the center of the second circle
+
+Your coordinates for circle 2 are (6, 0)
+
+Enter the radius for circle 2
+
+Your radius for circle 2 is 1
+
+The two circles touch once.
+
+
+Enter the coordinates of the center of the first circle
+
+Your coordinates for circle 1 are (-140, 20)
+
+Enter the radius for circle 1
+
+Your radius for circle 1 is 50
+
+Enter the coordinates of the center of the second circle
+
+Your coordinates for circle 2 are (23, 69)
+
+Enter the radius for circle 2
+
+Your radius for circle 2 is 40
+
+The two circles are separate from each other.
+
+
+Enter the coordinates of the center of the first circle
+
+Your coordinates for circle 1 are (12, 10)
+
+Enter the radius for circle 1
+
+Your radius for circle 1 is 10
+
+Enter the coordinates of the center of the second circle
+
+Your coordinates for circle 2 are (26, 10)
+
+Enter the radius for circle 2
+
+Your radius for circle 2 is 7
+
+The two circles overlap each other.
+
+
+Enter the coordinates of the center of the first circle
+
+Your coordinates for circle 1 are (-5, 0)
+
+Enter the radius for circle 1
+
+Your radius for circle 1 is 5
+
+Enter the coordinates of the center of the second circle
+
+Your coordinates for circle 2 are (-2, 0)
+
+Enter the radius for circle 2
+
+Your radius for circle 2 is 1
+
+A circle is within the other circle.
+
+Enter the coordinates of the center of the first circle
+
