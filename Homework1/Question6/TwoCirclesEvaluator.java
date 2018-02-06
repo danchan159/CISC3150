@@ -26,7 +26,9 @@ public class TwoCirclesEvaluator {
 				
 				double distanceBetweenCenters = Math.sqrt(Math.pow((x1-x2), 2) + Math.pow((y1-y2), 2));
 				
-				//System.out.println(distanceBetweenCenters);
+				System.out.println("The distance between centers is " + distanceBetweenCenters + ".\n"
+					+ "Circle 1: Center is (" + x1 +", " + y1 + "), with a radius of " + radiusCirc1
+					+ ".\n Circle 2: Center is ("+  x2 +", " + y2 + ") with a radius of " + radiusCirc2 + ".\n");
 				
 				double smallCircle;
 				double bigCircle;

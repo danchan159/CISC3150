@@ -14,6 +14,10 @@ Enter the radius for circle 2
 
 Your radius for circle 2 is 1
 
+The distance between centers is 6.0.
+Circle 1: Center is (0, 0), with a radius of 5.
+ Circle 2: Center is (6, 0) with a radius of 1.
+
 The two circles touch once.
 
 
@@ -32,6 +36,10 @@ Your coordinates for circle 2 are (23, 69)
 Enter the radius for circle 2
 
 Your radius for circle 2 is 40
+
+The distance between centers is 170.20575783445165.
+Circle 1: Center is (-140, 20), with a radius of 50.
+ Circle 2: Center is (23, 69) with a radius of 40.
 
 The two circles are separate from each other.
 
@@ -52,6 +60,10 @@ Enter the radius for circle 2
 
 Your radius for circle 2 is 7
 
+The distance between centers is 14.0.
+Circle 1: Center is (12, 10), with a radius of 10.
+ Circle 2: Center is (26, 10) with a radius of 7.
+
 The two circles overlap each other.
 
 
@@ -71,7 +83,12 @@ Enter the radius for circle 2
 
 Your radius for circle 2 is 1
 
+The distance between centers is 3.0.
+Circle 1: Center is (-5, 0), with a radius of 5.
+ Circle 2: Center is (-2, 0) with a radius of 1.
+
 A circle is within the other circle.
+
 
 Enter the coordinates of the center of the first circle
 
