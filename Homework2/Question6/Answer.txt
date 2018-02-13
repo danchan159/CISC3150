@@ -1,0 +1,11 @@
+Question 6:
+In our class, we talked about how the Scanner class doesn't have a method 
+for tokenizing individual characters. But you're hell bent on forcing the 
+Scanner class to tokenize the individual characters. What should you set 
+your delimiter to?
+
+Answer:
+To tokenize individual characters, set the delimiter to the empty string.
+By default, Scanner separates words by finding chars that end in whitespace.
+Instead of finding whitespace, setting the delimiter to the empty string ("")
+causes the Scanner to tokenize by each character read. 

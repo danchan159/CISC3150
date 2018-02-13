@@ -1,0 +1,20 @@
+Please enter a word to check if it is a palindrome
+madamimadam, It's true, that is a nice palindrome
+
+Please enter a word to check if it is a palindrome
+1000000001, It's true, that is a nice palindrome
+
+Please enter a word to check if it is a palindrome
+a, It's true, that is a nice palindrome
+
+Please enter a word to check if it is a palindrome
+1001, It's true, that is a nice palindrome
+
+Please enter a word to check if it is a palindrome
+moom, It's true, that is a nice palindrome
+
+Please enter a word to check if it is a palindrome
+124356789, Try again, not a palindrome
+
+Please enter a word to check if it is a palindrome
+qwerty, Try again, not a palindrome
