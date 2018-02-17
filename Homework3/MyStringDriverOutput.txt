@@ -1,0 +1,13 @@
+Making MyString drivingString Help Me
+Making a default MyString Default
+The char in drivingString at index 3 is p
+The length of drivingString is 7
+The first half of drivingString is Hel
+This is the quiet version of drivingString: help me
+This is the loud version of drivingString: HELP ME
+This is aMyString: Default
+This is the comparison value between drivingString and aMyString: 4
+This is aMyString now as drivingString: Help Me
+This is the updated comparison value between drivingString and aMyString 0
+This is int two billion in MyString format: 2000000000
+This is a String object composed from drivingString: Help Me
