@@ -1,0 +1,17 @@
+cate
+care
+cite
+cire
+mate
+mare
+mite
+mire
+date
+dare
+dite
+dire
+fate
+fare
+fite
+fire
+Quick Check, 16 strings equals 16 maximum strings
