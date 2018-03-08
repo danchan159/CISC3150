@@ -1,0 +1,51 @@
+a) Declared type is dog, actual type is dog
+	d.call(3) refers to Dog.call(int). 
+	Prints out Woof, woof, woof!
+
+	this is an example of overloading.
+
+b) Declared type is Object, actual type is Cat
+	println(c) looks for toString in Object at compile time, and finds toString in Cat at runtime. 
+	Prints out I'm a cat, go away!
+
+	this is an example of overriding.
+
+c) Declared type is Object, actual type is Pet
+
+	compile time error, call() isn't part of Object
+
+d) Declared type is Pet, actual type is Pet
+	println(p), Pet doesn't have a toString(), so the toString of Object is called, and the toString(p):
+	Prints out the hashcode of the p instance.
+
+	this is an example of polymorphism
+
+e) Declared type is Pet, actual type is Dog
+	println(q.call()); call is found in pet at compile time, dog's call is the most updated.
+	Prints out woof!
+
+	this is an example of polymorphism
+
+f) Declared type is Cat, actual type is Cat
+	println(t.toString("Come here, kitty")); 
+	toString(String) is in Cat, 
+	Prints out Come here, kitty?... Don't waste my time.
+
+	this is an example of overloading
+
+g) Declared type is Cat, actual type is Cat
+	println(u.call(3)); 
+
+	compile time error, call(int) is not found
+
+h) Declared type is Dog, actual type is Dog
+	println(e.feet());
+	feet is inherited from parent class Pet
+	Prints out four
+
+	this is polymorphism
+
+i) Declared type is Pet, actual type is Dog
+	println(r.call(3)); 
+
+	compile time error, call(int) is not found in Pet at compile time
