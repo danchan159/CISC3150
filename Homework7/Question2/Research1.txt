@@ -1,0 +1,57 @@
+1) In our class we saw that the java compiler seems to consider the actual 
+type of an exception instead of just the declared type. Here's the code:
+
+class blah{
+	public void someMethod(){
+		try{
+			throw new NullPointerException();
+		}
+		catch(Throwable t){
+			System.out.println("Caught!");
+			throw t;
+		}
+	}
+}
+
+You'd think that this class wouldn't compile, because t is declared to be 
+Throwable and that's a checked exception, but the code compiles just fine 
+because the actual type of t is an unchecked exception. On the other hand, 
+if you were to throw a checked exception in the try block, the code will 
+fail to compile because 't' is now a checked exception that you failed to 
+declare in your method. Find out why this happens. Make sure that you 
+provide sources.
+
+
+Sources:
+http://www.baeldung.com/java-sneaky-throws
+https://stackoverflow.com/questions/31316581/a-peculiar-feature-of-exception-type-inference-in-java-8
+https://docs.oracle.com/javase/specs/jls/se8/html/jls-18.html#jls-18.4
+https://github.com/fge/throwing-lambdas/issues/9
+http://4comprehension.com/sneakily-throwing-exceptions-in-lambda-expressions-in-java/
+
+
+From the baeldung source: 
+	"The compiler sees the signature with the throws T inferred to a RuntimeException type, so it allows the unchecked exception to propagate. The Java Runtime doesn’t see any type in the throws as all throws are the same a simple throw e."
+
+I think this is the relevant section, such that when the try block is considered to have thrown an uncheckedexception, the compiler "allows the unchecked exception to propagate". So when it arrives at the catch clause, it recognizes it to be an uncheckedexception 
+// catch (Throwable T) catches anything throwable
+And when it throws the caught exception in the catch block, it again throws as an uncheckedexception.
+
+So Java 8 seems to have put this rule in, for the type inference on throwables. But why?
+
+Apparently for solving an ambiguous problem with checked exceptions in lambda expressions. 
+
+Sources:
+https://stackoverflow.com/questions/32323081/why-doesnt-java-8-type-inference-consider-exceptions-thrown-by-lambdas-in-overl
+https://stackoverflow.com/questions/14039995/java-8-mandatory-checked-exceptions-handling-in-lambda-expressions-why-mandato
+http://mail.openjdk.java.net/pipermail/lambda-dev/2013-January/007660.html
+
+I think the problem is that when the inner, lambda expression is declared to throws something, there is some sort of compiile error because the method that contains the lambda expression doesn't declare that it throws something.
+
+Brian Goetz, Oracle's Java Language Architect, in why-doesnt-java-8-type-inference-consider-.. says :
+	" In the end, we concluded that using the presence of errors in the method body to discard a potentially applicable candidate would cause more confusion than benefit, especially given that there is a simple and safe workaround -- provide a target-type. We felt that reliability and predictability here outweighed optimal concision."
+// concision - as in minimizing words, while conveying an idea
+
+I think there is something valuable from when he says reliability and predictability, on the type inference of "throws RuntimeException". 
+
+I'm not sure of the real answer, but the rule on type inference could have been put in just to have some sort of concrete answer to the ambiguity in lambdas.

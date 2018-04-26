@@ -1,0 +1,58 @@
+Your expression was: 
+( 1.5 * 4 - 4.5 / 1.5 ) + ( 12 / ( 4 3 3 - 6 ) + 1.5 ) 
+
+Bad operator: 3, expected an operator
+
+
+
+Your expression was: 
+( 1.5 * 4 - 4.5 / 1.5 ) + ( 12 / ( 4 * 3 - 6 ) + 1.5 ) 
+
+The postfix is 1.5 4 * 4.5 1.5 / - 12 4 3 * 6 - / 1.5 + + 
+6.5
+
+
+Your expression was: 
+( 1.5 * 4 - 4.5 / 0 ) + ( 12 / ( 4 * 3 - 6 ) + 1.5 ) 
+
+The postfix is 1.5 4 * 4.5 0 / - 12 4 3 * 6 - / 1.5 + + 
+Don't divide by 0!
+
+
+Your expression was: 
+( 1.5 * 4 x 4.5 / 1.5 ) + ( 12 / ( 4 * 3 - 6 ) + 1.5 ) 
+
+Bad operator: x, expected an operator
+
+
+Your expression was: 
+( 1.5 * 4 - x / 0 ) + ( 12 / ( 4 * 3 - 6 ) + 1.5 ) 
+
+Invalid operand: x
+
+
+Your expression was: 
+( 4 * 12 ) / ( 5 + 6 + 1 ) + 72 + ( 2 * 1 + 2 ) 
+
+The postfix is 4 12 * 5 6 1 + + / 72 2 1 * 2 + + + 
+80
+
+
+Your expression was: 
+( 5 * ( -5 ) + 30 ) + 8 / 2 
+
+The postfix is 5 -5 * 30 + 8 2 / + 
+9
+
+
+Your expression was: 
+1.3 - 1.1 
+
+The postfix is 1.3 1.1 - 
+0.20
+
+Your expression was: 
+1.3 * 1.1 / 2.34 
+
+The postfix is 1.3 1.1 2.34 / * 
+0.61

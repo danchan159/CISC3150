@@ -1,0 +1,45 @@
+2) Research why you're able to call the default implementation of a method in 
+an interface with some weird syntax. Here's the code:
+
+public class blah{
+	public static void main(String[] args){
+		A a = new A();
+		a.someMethod();
+	}
+}
+
+interface myinterface{
+	default public void sayHello(){
+		System.out.println("Hello");
+	}
+}
+
+class A implements myinterface{
+	public void someMethod(){
+		myinterface.super.sayHello();
+	}
+}
+
+From the following sources 
+https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.12
+https://zeroturnaround.com/rebellabs/java-8-revealed-lambdas-default-methods-and-bulk-data-operations/6/
+and page 7 
+https://zeroturnaround.com/rebellabs/java-8-revealed-lambdas-default-methods-and-bulk-data-operations/7/
+
+
+My first intuitive guess was that if class A implemented multiple interfaces, and the interfaces had default methods with the same signature, and we wanted to use a specific interface's default implementation of a method instead of overriding it, we would need to know which interface's default method we wanted to use. 
+e.g. : class A implements myinterface, yourinterface
+which sayHello()? I want myinterface.super.sayHello(), not yourinterface.super.sayHello();
+
+
+I think I got part of it right. Of interest, on page 7 of zeroturnaround: 
+	" Here’s the javap output:
+
+	public void foo();
+	 Code:
+	  0: aload_0
+	  1: invokespecial #2    // InterfaceMethod A.foo:()V
+	  4: return
+	As you can see, invokespecial instruction is used to invoke the interface method foo(). This is also something new from the bytecode point of view as previously you would only invoke methods via super that points to a class (parent class), and not to an interface. "
+
+It seems to be saying that new to java 8, when you point with super it can now refer to a class or an interface.
