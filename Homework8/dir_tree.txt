@@ -1,0 +1,139 @@
+FileExplorer
+/CISC3150/
+├── 2-1-18 Example.java
+├── 2-1-18 Examplee.java
+├── 2-13-18 Example.java
+├── 2-15-18 Example.java
+├── 2-22-18 Example.java
+├── 2-27-18 Example.java
+├── 2-8-18 Example.java
+├── 3-1-18 Example.java
+├── 3-13-18 Example.java
+├── 3-15-18 exceptionhandling.java
+├── 3-20-18 example.java
+├── 3-8-18 Example.java
+├── 4-12-18 example.java
+├── 4-17-18 example.java
+├── 4-19-18 example.java
+├── 4-24-18 example.java
+├── 4-26-18 example.java
+├── A.class
+├── abc.class
+├── Area.class
+├── areaCircle.java
+├── B.class
+├── blah.class
+├── blah.java
+├── Box.class
+├── bukhariNotes.txt
+├── Circle.class
+├── CISC3150Folder.txt
+├── CISC3150Foldertest.txt
+├── example.class
+├── example.java
+├── exampleMid$returnvalues.class
+├── exampleMid$sample.class
+├── exampleMid.class
+├── exampleMid.java
+├── exampleMidOutput.txt
+├── exampleMidOutputPali.txt
+├── Exception1.class
+├── Exception2.class
+├── Exception3.class
+├── FileSpitter.java
+├── geo.class
+├── Homework1
+│   ├── old code
+│   ├── Question1
+│   │   └── SyllabusAgreementStatement.txt
+│   ├── Question2
+│   │   ├── areaCircle.java
+│   │   └── areaCircleOutput.txt
+│   ├── Question3
+│   │   ├── MonthRandomizer.java
+│   │   └── MonthRandomizerOutput.txt
+│   ├── Question4
+│   │   ├── FileSpitter.java
+│   │   ├── FileSpitterOutput.txt
+│   │   └── numbers.txt
+│   ├── Question5
+│   │   ├── TriangleEvaluator.java
+│   │   └── TriangleEvaluatorOutput.txt
+│   └── Question6
+│       └── TwoCirclesEvaluator.java
+│       └── TwoCirclesEvaluatorOutput.txt
+├── Homework1.zip
+├── Homework2
+│   ├── Question1
+│   │   ├── PyramidStacker.java
+│   │   └── PyramidStackerOutput.txt
+│   ├── Question2
+│   │   ├── Calendar.java
+│   │   └── CalendarOutput.txt
+│   ├── Question3
+│   │   ├── PalindromeCheck.class
+│   │   ├── PalindromeCheck.java
+│   │   └── PalindromeCheckOutput.txt
+│   ├── Question5
+│   │   ├── DelimiterOfScanner.java
+│   │   └── DelimiterOfScannerOutput.txt
+│   └── Question6
+│       └── Answer.txt
+├── Homework2.zip
+├── Homework3
+│   ├── MyStringDriver.java
+│   └── MyStringDriverOutput.txt
+├── Homework3.zip
+├── Homework4
+│   ├── 2dare.txt
+│   ├── 2dArray.txt
+│   ├── 2dArray.txt.zip
+│   ├── Dimensional.class
+│   ├── Dimensional.java
+│   ├── Dimensions.class
+│   ├── Dimensions.java
+│   ├── DimensionsOutput.txt
+│   ├── DimensionsOutput1.txt
+│   └── Homework4.zip
+├── Homework5
+│   ├── Question1
+│   │   ├── quarterPi.java
+│   │   ├── quarterPI.txt
+│   │   ├── quarterPiMT.java
+│   │   ├── quarterPiMT1000.txt
+│   │   ├── quarterPiMT2000.txt
+│   │   └── quarterPiMT4000.txt
+│   └── Question2
+│       └── Polymorphism.txt
+├── Homework5.zip
+├── Homework6
+│   ├── NQueens.class
+│   ├── NQueens.java
+│   ├── NQueensNoOutput.txt
+│   └── NQueensOutput.txt
+├── Homework6.zip
+├── Homework7
+│   ├── Question1
+│   │   ├── CmdCalc.java
+│   │   ├── CmdCalcOutput.txt
+│   │   └── testExpressions.txt
+│   └── Question2
+│       └── Research1.txt
+│       └── Research2.txt
+├── Homework7.zip
+├── Homework8
+│   ├── dir_tree.txt
+│   ├── dir_treeCISC3650.txt
+│   ├── FileComparator.class
+│   ├── FileExplorer$1.class
+│   ├── FileExplorer.class
+│   └── FileExplorer.java
+├── Person.class
+├── return_values.class
+├── sample.class
+├── second.class
+├── Student.class
+├── TwoCirclesEvaluator.java
+└── xyz.class
+
+23 directories, 112 files
