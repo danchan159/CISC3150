@@ -1,0 +1,68 @@
+
+First, we were unable to instantiate the Object class. Explain that.
+
+Second, we saw that with the notifyAll() uncommented, and the keyword 
+synchonized removed from the method declarations, the program just died 
+without throwing any exceptions. Given that we are working with an 
+infinite loop here, that shouldn't have happened. Explain that.
+
+At home, I was playing around with this code, and I noticed that if you 
+wrap notifyAll() in a try/catch block, you'll notice that 
+IllegalMonitorStateException is being thrown. The reason why you don't get 
+to see it is because it is a child of RuntimeException. Figure out how 
+you'd fix it. Research how to have two threads share an object's monitor & 
+fix the code.
+
+
+
+1) There was an error originating in the Object.java file, that made it impossible to instantiate the Object class. It might have been an integrity check on the file and it noticed something was off. I ran the same code Object x = new Object(); and it compiled successfully.
+
+
+2) The program dies because an unchecked exception, IllegalMonitorStateException, is being thrown from notifyAll(), because "the thread has attempted to wait on an object's monitor or to notify other threads waiting on an object's monitor without owning the specific monitor." - Java API Class IllegalMonitorStateException
+
+wait() is also throwing IllegalMonitorStateException but it was "handled" by the try-catch block in producer.
+
+Because an exception occured, it exits the infinite loop, and then run completes, and program exits.
+
+Source: Prof. Bukhari, Introduction to Java Programming Y. Daniel Liang pg 1118.
+
+
+3) To see the IllegalMonitorStateException, just do printStackTrace in the try catch block in the run definition. 
+
+To have the two threads share an object monitor, I can make economy have an object myobject that the synchronized block acquires a lock on. Instead of calling wait() or notifyAll() on the economy object, I call myobject.wait() and myobject.notifyAll() to acquire the lock on a object's monitor.
+
+class economy{
+	...
+	Object myobject = new Object();
+
+	producer(){
+		...
+		synchronized(myobject){
+			...
+			while(true){
+				...
+				myobject.wait();
+				...
+				myobject.notifyAll();
+				...
+			}
+		}
+	}
+
+	consumer(){
+		...
+		synchronized(myobject){
+			...
+			while(true){
+				...
+				myobject.wait();
+				...
+				myobject.notifyAll();
+				...
+			}
+		}
+	}
+}
+ 
+
+Source: Introduction to Java Programming Y Daniel Liang pg 1118 figure 30.17
